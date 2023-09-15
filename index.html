@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Vũ Đăng Danh - 11A1 - Portfolio</title>
 <meta charset="UTF-8">
@@ -69,7 +69,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="./gallery.html">Gallery</a>
 </div>
 
-<button class="openbtn" onclick="openNav()" style="position: absolute; top: 8px; left: 8px">&#9776;</button>
+<div id="main">
+  
+<button id="openNav" class="openbtn" onclick="openNav()" style="position: absolute; top: 8px; left: 8px">&#9776;</button>
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -248,13 +250,19 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p>Contact: <a href="mailto:danhvdfhh30136@fpt.edu.vn" target="_blank">danhvdfhh30136@fpt.edu.vn</a></p>
 </footer>
 
+</div>
+  
 <script>
 function openNav() {
+  document.getElementById("main").style.marginLeft = "250px";
   document.getElementById("mySidepanel").style.width = "250px";
+  document.getElementById("openNav").style.display = "none";
 }
 
 function closeNav() {
+  document.getElementById("main").style.marginLeft = "0";
   document.getElementById("mySidepanel").style.width = "0";
+  document.getElementById("openNav").style.display = "inline-block";
 }
 </script>
   
