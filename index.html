@@ -10,10 +10,6 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
 .sidepanel  {
   width: 0;
   position: fixed;
@@ -62,6 +58,20 @@ body {
 </style>
 </head>
 <body class="w3-light-grey">
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About me</a>
+  <a href="./goals.html">Personal goals</a>
+  <a href="./subjects.html">Subjects</a>
+  <a href="./extra.html">Extra activities</a>
+  <a href="./gallery.html">Gallery</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+<h2>Collapsed Sidepanel</h2>
+<p>Content...</p>
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -239,20 +249,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <p>Contact: <a href="mailto:danhvdfhh30136@fpt.edu.vn" target="_blank">danhvdfhh30136@fpt.edu.vn</a></p>
 </footer>
-
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="./index.html">Home</a>
-  <a href="./about.html">About me</a>
-  <a href="./goals.html">Personal goals</a>
-  <a href="./subjects.html">Subjects</a>
-  <a href="./extra.html">Extra activities</a>
-  <a href="./gallery.html">Gallery</a>
-</div>
-
-<button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
-<h2>Collapsed Sidepanel</h2>
-<p>Content...</p>
 
 <script>
 function openNav() {
