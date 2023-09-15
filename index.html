@@ -14,7 +14,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   width: 0;
   position: fixed;
   z-index: 1;
-  height: 250px;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: #111;
@@ -32,7 +32,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   transition: 0.3s;
 }
 
-.sidepanel a:hover {
+.sidepanel a: hover {
   color: #f1f1f1;
 }
 
@@ -52,7 +52,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   border: none;
 }
 
-.openbtn:hover {
+.openbtn: hover {
   background-color:#444;
 }
 </style>
@@ -69,7 +69,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="./gallery.html">Gallery</a>
 </div>
 
-<button class="openbtn" onclick="openNav()" style="padding: 15px">&#9776;</button>
+<button class="openbtn" onclick="openNav()" style="position: absolute; top: 8px; left: 8px">&#9776;</button>
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
