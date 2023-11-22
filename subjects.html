@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Vũ Đăng Danh - 11A1 - Subjects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <style>
+      body, h1, h2, h3, h4, h5 {font-family: "Raleway", sans-serif}
+    </style>
+    <style>
+      .sidepanel
+      {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidepanel a
+      {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidepanel a: hover
+      {
+        color: #f1f1f1;
+      }
+      
+      .sidepanel .closebtn
+      {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+      }
+      
+      .openbtn
+      {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn: hover
+      {
+        background-color:#444;
+      }
+
+      #footer
+      {
+        clear: both;
+        position: relative;
+        z-index: 10;
+        height: 3em;
+        margin-top: -3em;
+      }
+    </style>
+  </head>
+  <body class="w3-light-grey">
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About me</a>
+      <a href="./goals.html">Personal goals</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./extra.html">Extra activities</a>
+      <a href="./gallery.html">Gallery</a>
+    </div>
+
+    <div id="main">
+
+      <button id="openNav" type="button" class="openbtn" onclick="openNav()" style="position: absolute; top: 8px; left: 8px">&#9776;</button>
+      
+      <!-- w3-content defines a container for fixed size centered content, 
+      and is wrapped around the whole page content, except for the footer in this example -->
+      <div class="w3-content" style="max-width:1400px">
+        
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+          <h1><b>Subjects</b></h1>
+          <p><span class="w3-tag">Vũ Đăng Danh</span></p>
+        </header>
+        
+        <!-- Grid -->
+        <div class="w3-row">
+          
+          <!-- WOOP Section -->
+          <div class="w3-container" id="project-tracking">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQob0JqdlzpL4fcanzKUXBpsZ3QyW6qALwVNziwKUifHrIMIWGx0ub14JGiNdMU8w5ee_9jq5SvnJc5/pubhtml?widget=true&amp;headers=false"></iframe>
+          </div>
+          
+        <!-- END GRID -->
+        </div><br>
+        
+      <!-- END w3-content -->
+      </div>
+    
+      <!-- Footer -->
+      <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <p>Full name: Vũ Đăng Danh</p>
+        <p>Class: 11A1</p>
+        <p>Contact: <a href="mailto:danhvdfhh30136@fpt.edu.vn" target="_blank">danhvdfhh30136@fpt.edu.vn</a></p>
+      </footer>
+      
+    <!-- END main -->
+    </div>
+      
+    <script>
+      function openNav()
+      {
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidepanel").style.width = "250px";
+        document.getElementById("openNav").style.display = "none";
+      }
+      
+      function closeNav()
+      {
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySidepanel").style.width = "0";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+    
+  </body>
+</html>
